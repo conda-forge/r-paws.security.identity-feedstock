@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/paws.security.identity_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/paws.security.identity/paws.security.identity_{{ version }}.tar.gz
-  sha256: 6dc1cabc972269444db77466aae4c9e32fa78350b745efc48376788e5ad0dc66
+  sha256: 106f10b5ea662acc6ff825723a1245bde4756e962b37ef148ba834aea72e610a
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
